@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand By Me - Landing Page</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#images">Galeria</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <li><a href="#trivia">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <header>
+    </header>
+
+    <section id="images">
+        <h2>Galeria</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="src/images/img1.jpg" alt="Imagem 1" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="src/images/img2.webp" alt="Imagem 2" style="width:100%">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="src/images/img3.webp" alt="Imagem 3" style="width:100%">
+            </div>
+    
+            <!-- Botões de navegação anterior/próximo -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+    
+        <!-- Indicadores de pontos -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="trailer">
+        <h2>Trailer</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-0jDyn5thTY?si=S-oBiqe77E54xApe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="trivia">
+        <h2>Curiosidades</h2>
+        <ul>
+            <li>O filme é baseado no conto "The Body" de Stephen King.</li>
+            <li>Foi indicado ao Oscar de Melhor Roteiro Adaptado.</li>
+            <li>O nome do filme seria O Corpo, no entanto foi mudado quando a música escolhida para o final dele foi escolhida, Stand By Me, de Ben E. King.</li>
+            <li>Custou 8 milhões de dólares e rendeu 52 milhões de dólares, ficando em 2º lugar na arrecadação de bilheteria durante várias semanas.</li>
+            <li>A cena das sanguessugas foi escrita por King baseada em uma experiência parecida que ele teve na infância.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+    <script src="src/slideshow.js"></script>
+</body>
+</html>
